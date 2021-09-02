@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import sb.sbredis.sbredis.model.Customer;
 
 @Repository
-public interface CustomerRepository extends CrudRepository<Customer,Long>{
+public interface CustomerRepository extends CrudRepository<Customer,String>{
     
 }

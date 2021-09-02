@@ -10,27 +10,26 @@ import org.springframework.data.redis.core.index.Indexed;
 @RedisHash("customer")
 public class Customer {
     @Id
-    private long id;
+    private String id;
 
-    public Customer(long id, String firstName, String lastName) {
-        this.id = id;
+    public Customer(String firstName, String lastName) {
+        
         this.firstName = firstName;
         this.lastName = lastName;
     }
     public Customer() {
     }
     private String firstName;
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
     private String lastName;
     
     
-    public long getId() {
-        
-        return id;
-    }
-    public void setId(long id) {
-        
-        this.id=id;
-    }
+    
     public String getFirstName() {
         return firstName;
     }

@@ -1,0 +1,16 @@
+
+POST http://localhost:8080/sbredis/customer HTTP/1.1
+Content-Type:application/json
+
+{
+    "firstName":"echo",
+    "lastName":"echo"
+}
+
+GET http://localhost:8080/sbredis/customer HTTP/1.1
+
+GET http://localhost:8080/sbredis/customer HTTP/1.1
+
+PUT http://localhost:8080/sbredis/customer/189745ae-a3a6-45ef-a2c8-51b330f7f01c HTTP/1.1
+
+DELETE http://localhost:8080/sbredis/customer/2 HTTP/1.1
